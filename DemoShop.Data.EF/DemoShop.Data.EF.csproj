@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Configgurations\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Respositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoShop.Data\DemoShop.Data.csproj" />
+    <ProjectReference Include="..\DemoShop.Infrastructure\DemoShop.Infrastructure.csproj" />
+    <ProjectReference Include="..\DemoShop.Utilities\DemoShop.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
